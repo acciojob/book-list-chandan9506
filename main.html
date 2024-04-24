@@ -7,6 +7,43 @@
 </head>
 
 <body>
+	<h1>My<span>Book</span>List</h1>
+    <div class="form-group">
+        <form action="" id="book-form">
+            <div class="gap">
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" required>
+            </div>
+            <div class="gap">
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" required>
+            </div>
+            <div class="gap">
+                <label for="isbn">ISBN#:</label><br>
+                <input type="text" id="isbn" required>
+            </div>
+            <button type="submit" id="submit">Add Book</button>
+        </form>
+    </div>
+    <table class="table table-striped">
+        
+        <thead id="thead">
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th></th> <!-- Empty column for delete button -->
+          </tr>
+        </thead>
+       
+        <tbody id="book-list">
+          <!-- Book rows will be dynamically added here -->
+        </tbody>
+      </table>
+
+
+
+	
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
